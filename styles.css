@@ -1,0 +1,52 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background: #f8f8ff;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.semester {
+  background: white;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  width: 300px;
+}
+
+.semester h2 {
+  text-align: center;
+  margin-top: 0;
+  color: #444;
+}
+
+.subject {
+  background-color: pink;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.subject.approved {
+  background-color: purple;
+  color: white;
+  text-decoration: line-through;
+}
+
+.subject.locked {
+  background-color: lightgray;
+  cursor: not-allowed;
+  pointer-events: none;
+}
